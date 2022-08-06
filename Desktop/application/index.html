@@ -20,12 +20,31 @@
         </div>
         
         <div id="sidebar">
-            <div class="hierarchy-view"> <p>hierarchy view</p> </div>
-            <div class="create"> <p>Create variables</p> </div>
+            <div id="graph-panel">
+                <div id="colapse-menu">
+                    <label id="panel-label">Graphs</label>
+                    <button class="create-button">+</button>
+                </div>
+                <li class="graph-list" id="item-list"></li>
+            </div>
+            <div id="function-panel"> 
+                <div id="colapse-menu">
+                    <label id="panel-label">Functions</label>
+                    <button class="create-button">+</button>
+                </div>>
+                <li class="function-list" id="item-list"></li>
+            </div>
+            <div id="variables-panel"> 
+                <div id="colapse-menu">
+                    <label id="panel-label">Variables</label>
+                    <button class="create-button">+</button>
+                </div>
+                <li class="variables-list" id="item-list"></li>
+            </div>
         </div>
     
         <div id="graph">
-            <canvas id="graph-view"></canvas>
+            <canvas id="graph-view" width="800" height="480"></canvas>
         </div>
         <div id="details">
             <p>Aside</p>

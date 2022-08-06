@@ -6,10 +6,10 @@ async function createWindow(){
         width: 800,
         height: 600,
 
-        // webPreferences: {
-        //     nodeIntegration: false,
-        //     contextIsolation: false
-        // }
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false
+        }
     })
 
     await win.loadFile('application/index.html')
