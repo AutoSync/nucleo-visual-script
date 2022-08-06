@@ -1,6 +1,6 @@
 html, body{
-    height: 100%;
     width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: rgb(247, 244, 244);
@@ -10,3 +10,37 @@ html, body{
     box-sizing: border-box;
     font-family: 'Roboto Flex', sans-serif;
 }
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 5vh 95vh;
+    grid-template-areas: "t t t"
+                         "s g d";
+                        
+}
+
+#toolbar, #sidebar, #graph, #details{
+    background-color: rgb(26, 26, 27);
+    color: whitesmoke;
+    border: 1px solid rgb(65, 65, 65);
+}
+
+#toolbar{
+    grid-area: t;
+}
+#sidebar{
+    grid-area: s;
+}
+#graph{
+    grid-area: g;
+}
+#details{
+    grid-area: d;
+}
+
+

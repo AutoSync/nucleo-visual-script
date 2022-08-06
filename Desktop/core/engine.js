@@ -2,7 +2,7 @@ const { ipcRenderer } = require('electron')
 
 //Main elements
 
-const main = document.getElementById('main')
+const main = document.getElementById('graph')
 const title = document.getElementById('window-title')
 
 

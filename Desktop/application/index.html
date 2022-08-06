@@ -12,27 +12,26 @@
 </head>
 <body>
     
-    <div id="toolbar">
-        <button class="action-button">Save</button>
-        <button class="action-button">Compile Script</button>
-        <button class="action-button">Run Script</button>
-    </div>
+    <div id="main">
+        <div id="toolbar">
+            <button class="action-button">Save</button>
+            <button class="action-button">Compile Script</button>
+            <button class="action-button">Run Script</button>
+        </div>
+        
+        <div id="sidebar">
+            <div class="hierarchy-view"> <p>hierarchy view</p> </div>
+            <div class="create"> <p>Create variables</p> </div>
+        </div>
     
-    <div id="sidebar">
-        <div class="hierarchy-view"> <p>hierarchy view</p> </div>
-        <div class="create"> <p>Create variables</p> </div>
+        <div id="graph">
+            <canvas id="graph-view"></canvas>
+        </div>
+        <div id="details">
+            <p>Aside</p>
+        </div>
     </div>
 
-    <div id="main">
-        <h1>Main</h1>
-        <canvas id="graph-view"></canvas>
-    </div>
-    <div id="aside">
-        <p>Aside</p>
-    </div>
-    <div id="footer">
-        <p>Footer</p>
-    </div>
    
 
     <script src="../core/engine.js"></script>
